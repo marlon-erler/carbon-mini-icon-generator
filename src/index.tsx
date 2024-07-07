@@ -36,7 +36,7 @@ document.querySelector("main")!.append(
         </button>
       </div>
 
-      <p class="secondary">You can find icon names on <a href="https://fonts.google.com/icons">Google Fonts</a>.</p>
+      <p class="secondary" style="margin-top: var(--spacing-05)">You can find icon names on <a href="https://fonts.google.com/icons">Google Fonts</a>.</p>
 
       <hr></hr>
 
