@@ -1,0 +1,10 @@
+{
+  "name": "UDN Server",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "app-icon.png",
+      "sizes": "any"
+    }
+  ]
+}
