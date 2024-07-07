@@ -10,7 +10,7 @@ async function download() {
   if (!preview) return;
 
   const canvas = await html2canvas(preview);
-  const dataURL = canvas.toDataURL("image/png")
+  const dataURL = canvas.toDataURL("image/png");
   downloadData(dataURL, "icon.png", "image/png");
 }
 
@@ -36,7 +36,10 @@ document.querySelector("main")!.append(
         </button>
       </div>
 
-      <p class="secondary" style="margin-top: var(--spacing-05)">You can find icon names on <a href="https://fonts.google.com/icons">Google Fonts</a>.</p>
+      <p class="secondary" style="margin-top: 1rem">
+        You can find icon names on{" "}
+        <a href="https://fonts.google.com/icons">Google Fonts</a>.
+      </p>
 
       <hr></hr>
 
