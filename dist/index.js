@@ -8059,22 +8059,30 @@
     (0, import_downloadjs.default)(dataURL, "icon.png", "image/png");
   }
   document.querySelector("main").append(
-    /* @__PURE__ */ createElement("article", null, /* @__PURE__ */ createElement("header", null, "Icon Generator"), /* @__PURE__ */ createElement("div", null, /* @__PURE__ */ createElement("label", { class: "tile" }, /* @__PURE__ */ createElement("div", null, /* @__PURE__ */ createElement("span", null, "Icon name"), /* @__PURE__ */ createElement(
-      "input",
+    /* @__PURE__ */ createElement("article", null, /* @__PURE__ */ createElement("header", null, "Icon Generator"), /* @__PURE__ */ createElement(
+      "div",
       {
-        "bind:value": iconName,
-        "on:enter": download,
-        placeholder: "home"
-      }
-    ))), /* @__PURE__ */ createElement("div", { class: "flex-row justify-end width-input" }, /* @__PURE__ */ createElement("button", { class: "primary width-50", "on:click": download }, "Download", /* @__PURE__ */ createElement("span", { class: "icon" }, "download"))), /* @__PURE__ */ createElement("hr", null), /* @__PURE__ */ createElement("h3", null, "Preview"), /* @__PURE__ */ createElement(
-      "span",
-      {
-        id: "preview",
-        style: "\n      padding: 3rem; \n      font-size: 15rem;\n      color: var(--primary);\n      background-color: hsla(0, 0%, 9%, 100%);\n      outline: 1px solid var(--border);",
-        class: "icon",
-        "subscribe:innerText": iconName
-      }
-    )))
+        class: "flex-row align-center justify-center",
+        style: "flex-wrap: wrap; gap: 2rem;"
+      },
+      /* @__PURE__ */ createElement("div", null, /* @__PURE__ */ createElement("label", { class: "tile" }, /* @__PURE__ */ createElement("div", null, /* @__PURE__ */ createElement("span", null, "Icon name"), /* @__PURE__ */ createElement(
+        "input",
+        {
+          "bind:value": iconName,
+          "on:enter": download,
+          placeholder: "home"
+        }
+      ))), /* @__PURE__ */ createElement("button", { class: "primary width-input", "on:click": download }, "Download", /* @__PURE__ */ createElement("span", { class: "icon" }, "download")), /* @__PURE__ */ createElement("p", { class: "secondary", style: "margin-top: 1rem" }, "You can find the icon names on ", /* @__PURE__ */ createElement("a", { href: "https://fonts.google.com/icons" }, "Google Fonts"), ".")),
+      /* @__PURE__ */ createElement(
+        "span",
+        {
+          id: "preview",
+          style: "\npadding: 3rem; \nfont-size: 15rem;\ncolor: var(--primary);\nbackground-color: hsla(0, 0%, 9%, 100%);\noutline: 1px solid var(--border);",
+          class: "icon",
+          "subscribe:innerText": iconName
+        }
+      )
+    ))
   );
 })();
 /*! Bundled license information:

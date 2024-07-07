@@ -17,42 +17,41 @@ async function download() {
 document.querySelector("main")!.append(
   <article>
     <header>Icon Generator</header>
-    <div>
-      <label class="tile">
-        <div>
-          <span>Icon name</span>
-          <input
-            bind:value={iconName}
-            on:enter={download}
-            placeholder="home"
-          ></input>
-        </div>
-      </label>
+    <div
+      class="flex-row align-center justify-center"
+      style="flex-wrap: wrap; gap: 2rem;"
+    >
+      <div>
+        <label class="tile">
+          <div>
+            <span>Icon name</span>
+            <input
+              bind:value={iconName}
+              on:enter={download}
+              placeholder="home"
+            ></input>
+          </div>
+        </label>
 
-      <div class="flex-row justify-end width-input">
-        <button class="primary width-50" on:click={download}>
+        <button class="primary width-input" on:click={download}>
           Download
           <span class="icon">download</span>
         </button>
+
+        <p class="secondary" style="margin-top: 1rem">
+          You can find the icon names on{" "}
+          <a href="https://fonts.google.com/icons">Google Fonts</a>.
+        </p>
       </div>
-
-      <p class="secondary" style="margin-top: 1rem">
-        You can find icon names on{" "}
-        <a href="https://fonts.google.com/icons">Google Fonts</a>.
-      </p>
-
-      <hr></hr>
-
-      <h3>Preview</h3>
 
       <span
         id="preview"
         style="
-      padding: 3rem; 
-      font-size: 15rem;
-      color: var(--primary);
-      background-color: hsla(0, 0%, 9%, 100%);
-      outline: 1px solid var(--border);"
+padding: 3rem; 
+font-size: 15rem;
+color: var(--primary);
+background-color: hsla(0, 0%, 9%, 100%);
+outline: 1px solid var(--border);"
         class="icon"
         subscribe:innerText={iconName}
       ></span>
