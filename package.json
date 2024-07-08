@@ -1,12 +1,12 @@
 {
-    "dependencies": {
-        "@types/downloadjs": "^1.4.6",
-        "bloatless-react": "^1.2.0",
-        "downloadjs": "^1.4.7",
-        "esbuild": "latest",
-        "html2canvas": "^1.4.1"
-    },
-    "scripts": {
-        "build": "esbuild src/index.tsx --bundle --outdir=dist"
-    }
+  "dependencies": {
+    "@types/downloadjs": "^1.4.6",
+    "bloatless-react": "^1.2.4",
+    "downloadjs": "^1.4.7",
+    "esbuild": "latest",
+    "html2canvas": "^1.4.1"
+  },
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --outdir=dist"
+  }
 }
